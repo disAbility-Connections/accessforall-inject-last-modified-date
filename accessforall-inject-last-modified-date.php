@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Access For All - Inject Last Modified Date
  * Description: Injects a Shortcode into each Post in the appropriate location to always show the last modified date
- * Version: 0.1.0
+ * Version: 1.0.0
  * Text Domain: accessforall-inject-last-modified-date
  * Author: Real Big Marketing
  * Author URI: https://realbigmarketing.com/
@@ -19,19 +19,19 @@ if ( ! class_exists( 'AccessForAll_Inject_Last_Modified_Date' ) ) {
 	/**
 	 * Main AccessForAll_Inject_Last_Modified_Date class
 	 *
-	 * @since	  {{VERSION}}
+	 * @since	  1.0.0
 	 */
 	final class AccessForAll_Inject_Last_Modified_Date {
 		
 		/**
 		 * @var			array $plugin_data Holds Plugin Header Info
-		 * @since		{{VERSION}}
+		 * @since		1.0.0
 		 */
 		public $plugin_data;
 		
 		/**
 		 * @var			array $admin_errors Stores all our Admin Errors to fire at once
-		 * @since		{{VERSION}}
+		 * @since		1.0.0
 		 */
 		private $admin_errors;
 
@@ -39,7 +39,7 @@ if ( ! class_exists( 'AccessForAll_Inject_Last_Modified_Date' ) ) {
 		 * Get active instance
 		 *
 		 * @access	  public
-		 * @since	  {{VERSION}}
+		 * @since	  1.0.0
 		 * @return	  object self::$instance The one true AccessForAll_Inject_Last_Modified_Date
 		 */
 		public static function instance() {
@@ -82,7 +82,7 @@ if ( ! class_exists( 'AccessForAll_Inject_Last_Modified_Date' ) ) {
 		 * Setup plugin constants
 		 *
 		 * @access	  private
-		 * @since	  {{VERSION}}
+		 * @since	  1.0.0
 		 * @return	  void
 		 */
 		private function setup_constants() {
@@ -121,7 +121,7 @@ if ( ! class_exists( 'AccessForAll_Inject_Last_Modified_Date' ) ) {
 		 * Internationalization
 		 *
 		 * @access	  private 
-		 * @since	  {{VERSION}}
+		 * @since	  1.0.0
 		 * @return	  void
 		 */
 		private function load_textdomain() {
@@ -158,7 +158,7 @@ if ( ! class_exists( 'AccessForAll_Inject_Last_Modified_Date' ) ) {
 		 * Include different aspects of the Plugin
 		 * 
 		 * @access	  private
-		 * @since	  {{VERSION}}
+		 * @since	  1.0.0
 		 * @return	  void
 		 */
 		private function require_necessities() {
@@ -188,7 +188,7 @@ if ( ! class_exists( 'AccessForAll_Inject_Last_Modified_Date' ) ) {
 		 * Show admin errors.
 		 * 
 		 * @access	  public
-		 * @since	  {{VERSION}}
+		 * @since	  1.0.0
 		 * @return	  HTML
 		 */
 		public function admin_errors() {
@@ -207,7 +207,7 @@ if ( ! class_exists( 'AccessForAll_Inject_Last_Modified_Date' ) ) {
 		 * Register our CSS/JS to use later
 		 * 
 		 * @access	  public
-		 * @since	  {{VERSION}}
+		 * @since	  1.0.0
 		 * @return	  void
 		 */
 		public function register_scripts() {
@@ -261,7 +261,7 @@ if ( ! class_exists( 'AccessForAll_Inject_Last_Modified_Date' ) ) {
 		 * ...A little overly complicated sounding, but to get around server limitations and utilize this library it was about the only sane way to do it
 		 *
 		 * @access	public
-		 * @since	{{VERSION}}
+		 * @since	1.0.0
 		 * @return  [void]
 		 */
 		public function register_batch() {
@@ -279,7 +279,7 @@ if ( ! class_exists( 'AccessForAll_Inject_Last_Modified_Date' ) ) {
  * The main function responsible for returning the one true AccessForAll_Inject_Last_Modified_Date
  * instance to functions everywhere
  *
- * @since	  {{VERSION}}
+ * @since	  1.0.0
  * @return	  \AccessForAll_Inject_Last_Modified_Date The one true AccessForAll_Inject_Last_Modified_Date
  */
 add_action( 'plugins_loaded', 'accessforall_inject_last_modified_date_load' );

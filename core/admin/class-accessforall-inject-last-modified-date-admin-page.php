@@ -2,7 +2,7 @@
 /**
  * The admin settings page for the Access For All - Inject Last Modified Date
  *
- * @since {{VERSION}}
+ * @since 1.0.0
  *
  * @package AccessForAll_Inject_Last_Modified_Date
  * @subpackage AccessForAll_Inject_Last_Modified_Date/core/admin
@@ -15,7 +15,7 @@ final class AccessForAll_Inject_Last_Modified_Date_Admin_Page {
 	/**
 	 * AccessForAll_Inject_Last_Modified_Date_Admin_Page constructor.
 	 *
-	 * @since {{VERSION}}
+	 * @since 1.0.0
 	 */
 	function __construct() {
 
@@ -33,7 +33,7 @@ final class AccessForAll_Inject_Last_Modified_Date_Admin_Page {
 	 * Add the Submenu Page
 	 *
 	 * @access		public
-	 * @since		{{VERSION}}
+	 * @since		1.0.0
 	 * @return		void
 	 */
 	public function add_submenu_page() {
@@ -55,7 +55,7 @@ final class AccessForAll_Inject_Last_Modified_Date_Admin_Page {
      * @param   array  $l10n  Localized Variables
      *
      * @access  public
-     * @since   {{VERSION}}
+     * @since   1.0.0
      * @return  array         Localized Variables
      */
     public function localize_script( $l10n ) {
@@ -70,7 +70,7 @@ final class AccessForAll_Inject_Last_Modified_Date_Admin_Page {
 	 * Adds our CSS/JS to the Settings Page
 	 *
 	 * @access		public
-	 * @since		{{VERSION}}
+	 * @since		1.0.0
 	 * @return		void
 	 */
 	public function enqueue_scripts() {
@@ -112,7 +112,7 @@ final class AccessForAll_Inject_Last_Modified_Date_Admin_Page {
      * Create the Content/Form for our Admin Page
      *
      * @access      public
-     * @since       {{VERSION}}
+     * @since       1.0.0
      * @return      void
      */
     public function page_content() { ?>
@@ -191,7 +191,7 @@ final class AccessForAll_Inject_Last_Modified_Date_Admin_Page {
      * Effectively creates the batch by creating the temporary file that the batch is created with
      *
      * @access  public
-     * @since   {{VERSION}}
+     * @since   1.0.0
      * @return  void
      */
     public function create_batch() {

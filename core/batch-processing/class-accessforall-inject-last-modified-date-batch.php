@@ -2,7 +2,7 @@
 /**
  * Batch class for creating a Gradebook for each Course
  *
- * @since {{VERSION}}
+ * @since 1.0.0
  *
  * @package AccessForAll_Inject_Last_Modified_Date
  * @subpackage AccessForAll_Inject_Last_Modified_Date/core/batch
@@ -107,7 +107,7 @@ if ( class_exists( 'WP_Batch' ) ) {
          * @param   array  $post_args    The data we told WordPress to use to update the Post
          *
          * @access  public
-         * @since   {{VERSION}}
+         * @since   1.0.0
          * @return  array                The data that WordPress will use to update the Post
          */
         public function fix_modified_timestamp( $update_data, $post_args ) {
