@@ -202,7 +202,7 @@ final class AccessForAll_Inject_Last_Modified_Date_Admin_Page {
 
         $items = new WP_Query( array(
             'fields' => 'ids',
-            'post_type' => array( 'post', 'act-template' ),
+            'post_type' => array( 'post', 'act_template' ),
             'posts_per_page' => -1,
         ) );
 

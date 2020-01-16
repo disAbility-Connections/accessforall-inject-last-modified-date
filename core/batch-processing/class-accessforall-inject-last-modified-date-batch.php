@@ -113,7 +113,7 @@ if ( class_exists( 'WP_Batch' ) ) {
         public function fix_modified_timestamp( $update_data, $post_args ) {
 
             $update_data['post_modified'] = ( isset( $post_args['post_modified'] ) && $post_args['post_modified'] ) ? $post_args['post_modified'] : $update_data['post_modified'];
-            
+
             $update_data['post_modified_gmt'] = ( isset( $post_args['post_modified_gmt'] ) && $post_args['post_modified_gmt'] ) ? $post_args['post_modified_gmt'] : $update_data['post_modified_gmt'];
 
             return $update_data;
