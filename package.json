@@ -1,6 +1,6 @@
 {
   "name": "accessforall_inject_last_modified_date",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "dependencies": {
     "foundation-sites": "^6.5.3"
   },

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Access For All - Inject Last Modified Date
  * Description: Injects a Shortcode into each Post in the appropriate location to always show the last modified date
- * Version: 1.0.1
+ * Version: 1.0.2
  * Text Domain: accessforall-inject-last-modified-date
  * Author: Real Big Marketing
  * Author URI: https://realbigmarketing.com/
