@@ -1,0 +1,43 @@
+// Copied from https://github.com/gdarko/wp-batch-processing/blob/11bf4281d446fba3aed5a2a17374acf2def63005/views/batch-manage.php
+
+.batch-process-stats {
+	text-align:center;
+	list-style: none;
+}
+.batch-process-stats li {
+	display: inline-block;
+	min-width: 20%;
+}
+.batch-process-progress-bar-inner {
+    position: absolute;
+    background: #0073aa;
+    width: 0;
+    height: 100%;
+    left: 0;
+}
+.batch-process-progress-bar {
+    background: #f0f0f0;
+    min-height: 20px;
+    position: relative;
+}
+.batch-process-actions {
+    padding: 10px;
+    text-align:center;
+}
+.batch-process-current-item {
+	text-align: center;
+}
+.batch-process-main {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.batch-process {
+    max-width: 500px;
+    background: #fff;
+    margin-top: 15px;
+}
+.batch-process-current-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-height: 12px;
+}

@@ -1,0 +1,15 @@
+@import 'foundation';
+
+// These styles are applied to a <meta> tag, which is read by the Foundation JavaScript
+// This is the only part of the foundation-global-styles mixin we need
+// If we include all of the Global Styles, it adjusts sizing elsewhere too and we don't want that
+.foundation-mq {
+	font-family: '#{-zf-bp-serialize($breakpoints)}';
+}
+
+@include foundation-reveal;
+@include foundation-close-button;
+
+@import 'wp-batch-processing';
+
+@import 'reveal';

@@ -1,0 +1,25 @@
+{
+    "name": "disAbility-Connections/accessforall-inject-last-modified-date",
+    "description": "Migrator for Gradebooks from the currently in use method",
+    "type": "multimedia",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "gdarko/wp-batch-processing",
+                "version": "1.0.1",
+                "source": {
+                    "url": "https://github.com/gdarko/wp-batch-processing",
+                    "type": "git",
+                    "reference": "29a4a30b0a89a94cebfab2a1f973b9e6b067834f"
+                },
+                "autoload": {
+                    "files": ["wp-batch-processing.php"]
+                }
+            }
+        }
+    ],
+    "require": {
+        "gdarko/wp-batch-processing": "1.0.*"
+    }
+}

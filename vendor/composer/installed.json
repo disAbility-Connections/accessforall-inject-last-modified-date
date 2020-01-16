@@ -1,0 +1,19 @@
+[
+    {
+        "name": "gdarko/wp-batch-processing",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/gdarko/wp-batch-processing",
+            "reference": "29a4a30b0a89a94cebfab2a1f973b9e6b067834f"
+        },
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "wp-batch-processing.php"
+            ]
+        }
+    }
+]
