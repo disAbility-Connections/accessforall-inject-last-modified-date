@@ -88,6 +88,10 @@ if ( class_exists( 'WP_Batch' ) ) {
                 'post_modified_gmt' => ( $post->post_modified_gmt ) ? $post->post_modified_gmt : false,
                 'post_date' => $post->post_date,
                 'post_date_gmt' => $post->post_date_gmt,
+                'tax_input' => array(
+                    'category' => wp_get_post_terms( $post->ID, 'category', array( 'fields' => 'ids' ) ),
+                    'post_tag' => wp_get_post_terms( $post->ID, 'post_tag', array( 'fields' => 'ids' ) ),
+                ),
             ), true );
 
             remove_filter( 'wp_insert_post_data', array( $this, 'fix_modified_timestamp' ), 10, 2 );
