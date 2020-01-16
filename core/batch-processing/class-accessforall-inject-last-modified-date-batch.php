@@ -86,6 +86,8 @@ if ( class_exists( 'WP_Batch' ) ) {
                 'post_content' => $post_content,
                 'post_modified' => ( $post->post_modified ) ? $post->post_modified : false,
                 'post_modified_gmt' => ( $post->post_modified_gmt ) ? $post->post_modified_gmt : false,
+                'post_date' => $post->post_date,
+                'post_date_gmt' => $post->post_date_gmt,
             ), true );
 
             remove_filter( 'wp_insert_post_data', array( $this, 'fix_modified_timestamp' ), 10, 2 );
